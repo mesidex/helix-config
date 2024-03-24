@@ -1,0 +1,9 @@
+theme = "dark_plus"
+
+[editor]
+mouse = false
+cursorline = true
+idle-timeout = 0
+
+[editor.gutters]
+layout = ["diagnostics", "spacer", "line-numbers", "spacer"]

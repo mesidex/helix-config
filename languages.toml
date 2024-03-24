@@ -1,0 +1,11 @@
+[language-server.glsl_analyzer]
+command = "glsl_analyzer"
+
+[[language]]
+name = "glsl"
+scope = "source.glsl"
+file-types = ["glsl", "vert", "tesc", "tese", "geom", "frag", "comp" ]
+comment-token = "//"
+indent = { tab-width = 4, unit = "    " }
+injection-regex = "glsl"
+language-servers = [ "glsl_analyzer" ]
