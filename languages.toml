@@ -1,6 +1,9 @@
 [language-server.glsl_analyzer]
 command = "glsl_analyzer"
 
+[language-server.zls]
+command = "zls"
+
 [[language]]
 name = "glsl"
 scope = "source.glsl"
@@ -9,3 +12,13 @@ comment-token = "//"
 indent = { tab-width = 4, unit = "    " }
 injection-regex = "glsl"
 language-servers = [ "glsl_analyzer" ]
+
+[[language]]
+name = "zig"
+scope = "source.zig"
+file-types = ["zig"]
+comment-token = "//"
+indent = { tab-width = 4, unit = "    " }
+injection-regex = "zig"
+formatter = { command = "zig fmt" , args = ["--stdin"] }
+language-servers = [ "zls" ]
