@@ -1,0 +1,9 @@
+inherits = "meliora"
+"ui.background" ={}
+"ui.gutter" = {}
+"ui.linenr" = { fg = "grey"}
+"ui.linenr.selected" = { fg = "dark_white"}
+"ui.cursorline.primary" = { bg = "glass" }
+
+[palette]
+glass = "#303030"
